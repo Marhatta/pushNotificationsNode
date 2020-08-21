@@ -63,8 +63,7 @@ app.post("/send", (req, res) => {
   res.send(
     sendFcmMessage({
       message: {
-        token:
-          "cFvBeWAkQK2xM5-VJRFCdU:APA91bEGWsjBDFK-5bv1oBirSEuwWDOSbPdfHtxgQ4MN8uhDDSsuQ1X6WJpfEzN84r0aONweDdhunHLu5r6Sup6DNkCDzTRYg68MH8PnYyGWG6_wBsTiWXE523EmyKS-8Ai22bDEMCAs",
+        token:process.env.REGISTRATION_TOKEN,
         notification: {
           title: "Portugal vs. Denmark",
           body: "great match!",
